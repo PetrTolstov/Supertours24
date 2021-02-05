@@ -1,0 +1,59 @@
+extends layout
+
+block content
+  main
+    .firstBlock
+      .logo
+        img#logo(src='images/logo.svg')
+      a#langto(href=`/${text["langto"]}`) #{text['langto']}
+      .textBLock
+        h1 #{text['h1']}
+        .blackbg
+          p
+            | #{text['firstBlockp']}
+          div
+            a.pbut #{text['firstBlockBut']}
+    .startWave
+    .secondBlock
+      h2 #{text['h2']}
+      #vkpostS
+
+    script(type='text/javascript').
+      (function () {
+        let listPosts = !{JSON.stringify(posts)}
+
+        const parent = document.getElementById("vkpostS");
+        let code = ''
+        for (let post of listPosts) {
+
+          let photo = post.attachments[0].photo.sizes[listPosts[0].attachments[0].photo.sizes.length - 1].url
+          let num = post.text.indexOf('\n')
+          let h = post.text.slice(0, num)
+          let p = post.text.slice(num)
+
+          code += `<div class="vkpost">
+                                <div class="post" style="background: url('${photo}') no-repeat;">
+                                    <div class="postText">
+                                        <div class="shadow"></div>
+                                        <h3>${h}</h3>
+                                        <p>${p}</p>
+                                        <div class="Button">#{text["more"]}</div>
+                                    </div>
+                                </div>
+                            </div>`
+
+
+        }
+
+        parent.innerHTML = code
+
+      })()
+
+    .endOFwave
+    .footerHead
+    .ob
+      .footer
+        a.pbut #{text['footerBut']}
+        p
+          | #{text['footerP']}
+        // pre is original way

@@ -1,0 +1,319 @@
+*{
+  margin: 0;
+  color: white;
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+
+
+
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: rgba(33, 175, 156, 0.42);
+}
+
+a {
+  color: #00B7FF;
+}
+main { 
+  display: flex;
+  flex-direction: column;
+}
+
+#langto{
+  color: #E4FDFF;
+  text-decoration: none;
+
+  top: 42px;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+}
+
+#langto:hover{
+  color: #afb8b8;
+  text-decoration: none;
+}
+
+.firstBlock{
+  background: url("../images/photoBG.png") no-repeat center fixed;
+  background-size: cover;
+
+  width: 100vw;
+  height: 1500px;
+
+
+}
+
+.startWave{
+
+  position: relative;
+  top: -25vh;
+  background: url("../images/wave.svg") no-repeat  ;
+  background-size: 100% auto;
+
+
+  height: 30vh;
+}
+
+.endOFwave{
+  z-index: 2;
+
+  height: 30vh;
+  position: relative;
+  top: -30vh;
+  background: url("../images/wave.svg") no-repeat  ;
+  background-size: 100% auto;
+
+  transform: scale(-1, -1);
+
+}
+
+.secondBlock{
+  background: #E4FDFF;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  margin-top: -10px;
+  position: relative;
+  top: -25vh;
+  text-align: center;
+}
+
+.secondBlock h2{
+  color: #0D1B19;
+  font-size: 2rem;
+}
+
+#vkpostS{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* position: relative; */
+  padding-top: 10vh;
+}
+
+.vkpost{
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 50px;
+  display: flex;
+
+  justify-content: space-evenly;
+  flex: 0 0 50%;
+  /* max-width: 50%; */
+  max-width: 700px;
+  min-width: 300px;
+  margin: 1px;
+
+}
+
+.post{
+  height: 430px;
+  width: 600px;
+}
+
+.postText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  border-radius: 5px;
+
+  background: rgba(0,0,0,0.41);
+  height: 100%;
+}
+
+
+
+.postText h3{
+
+  padding: 20px;
+  font-size: 1.5rem ;
+}
+
+.postText p{
+  padding: 20px;
+  font-size: 1rem ;
+}
+
+
+
+
+#logo{
+  margin: 30px;
+  height: 40px;
+  position: fixed;
+}
+
+.textBLock{
+  font-family: Rubik, sans-serif;
+
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.88);
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 35%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: -100px; /* Negative half of height. */
+
+}
+
+.textBLock h1{
+
+  font-size: 3rem;
+}
+
+.blackbg{
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 5vh;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: rgba(0, 0, 0, 0.49);
+}
+
+.blackbg p{
+  font-size: 1.2rem;
+  line-height: 35px;
+  padding-bottom: 50px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.pbut{
+  background: linear-gradient(90deg, rgba(210, 50, 0, 0.9) 24.19%, rgba(255, 168, 0, 0.882) 67.74%);
+  border: 1px solid #ECEFFF;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.81);
+  border-radius: 5px;
+
+  text-align: center;
+
+  padding: 10px;
+
+  color: #ECEFFF;
+
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.9);
+}
+
+.footerHead{
+  position: relative;
+  background: #a1ddd5;
+  top: -60vh;
+  height: 30vh;
+  z-index: 1;
+}
+
+.ob{
+  /* top: -60vh; */
+  position: relative;
+  margin-top: -465px;
+}
+
+.footer{
+
+  /* position: absolute; */
+  position: relative;
+  width: 100%;
+
+  margin-top: -100px;
+  padding-top: 250px;
+  display: flex;
+  justify-content: space-between;
+  /* height: 30vh; */
+  background: #a1ddd5;
+}
+
+.footer *{
+  margin: 20px;
+}
+
+.footer .pbut{
+  align-self: flex-end;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.footer pre{
+  color: #0D1B19;
+  
+}
+
+.footer p { 
+  color: #0D1B19;
+  max-width: 400px;
+  /* margin-left: 50px; */
+  /* padding-left: 40px; */
+  margin-right: 10px;
+}
+
+
+
+
+/*--------------- Animations --------------- */
+
+
+
+
+/* Post Button animation */
+
+
+.shadow { 
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.Button { 
+  z-index: 11;
+  position: absolute;
+  font-size: xx-large;
+  text-align: center;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px #ecefff00;
+  color: #ecefff00;
+  border-radius: 5px;
+  font-weight: lighter ;
+  padding: 5px 10px;
+  transition: all 0.8s;
+}
+
+.post:hover .Button {
+  color: #ECEFFF;
+  border: solid 1px #ecefff;
+} 
+.post:hover .shadow { 
+  background-color: #000000e1 ;
+  
+}
+
+.Button:hover { 
+  cursor: pointer;
+}
+
+.pbut:hover { 
+  cursor: pointer;
+}
