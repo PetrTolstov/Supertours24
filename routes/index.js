@@ -16,7 +16,7 @@ RUtext = {
   h2: "Спецпредложения и горящие туры:",
   more : "Подробнее",
   footerBut: "Больше предложений",
-  footerP : " Рауа 16А, 10152, Таллинн Тарту мнт. 29, 10128, Tallinn Pikk 45, 50603, Tarturaua @ oikumena.eeasian @ oikumena.ee tartu@oikumena.ee T: +372 625-6030 T: +372 648-4422 T: + 372 7420330 M: +372530 -09905 М: +372511-9681"
+  footerP : "Supertours oü Reg. 14803852 +372 58353633"
 }
 
 ETtext = {
@@ -27,7 +27,7 @@ ETtext = {
   h2: "Eripakkumised ja viimase hetke ekskursioonid:",
   more : "Rohkem detaile",
   footerBut: "Veel pakkumisi",
-  footerP : " Raua 16A, 10152, Tallinn Tartu mnt. 29, 10128, Tallinn Pikk 45, 50603, Tarturaua @ oikumena.eeasian @ oikumena.ee tartu@oikumena.ee T: +372 625-6030 T: +372 648-4422 T: + 372 7420330 M: +372530 -09905 М : + 372 511-9681 "
+  footerP : "Supertours oü Reg. 14803852 +372 58353633"
 }
 
 
