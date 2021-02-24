@@ -25,8 +25,8 @@ block content
         const parent = document.getElementById("vkpostS");
         let code = ''
         for (let post of listPosts) {
-
-          let photo = post.attachments[0].photo.sizes[listPosts[0].attachments[0].photo.sizes.length - 1].url
+          let id_num = post.attachments[0].photo.sizes.length - 1;
+          let photo = post.attachments[0].photo.sizes[id_num].url;
           let num = post.text.indexOf('\n')
           let h = post.text.slice(0, num)
           let p = post.text.slice(num)
