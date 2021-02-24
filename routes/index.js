@@ -8,7 +8,7 @@ const ETpost = 'https://api.vk.com/method/wall.get?owner_id=-202120409&access_to
 const RUpost = 'https://api.vk.com/method/wall.get?owner_id=-202120422&access_token=2efe49e62efe49e62efe49e6f42e8857f722efe2efe49e64ef1b65d5acae1c7081f1797&v=5.126';
 
 
-RUtext = {
+let RUtext = {
   langto : "ET",
   h1:"ГОРЯЩИЕ ТУРЫ ПО ВСЕМУ МИРУ",
   firstBlockp: "Пройди простой опрос и получи индивидуальную подборку горящив туров",
@@ -19,7 +19,7 @@ RUtext = {
   footerP : "Supertours oü Reg. 14803852 +372 58353633"
 }
 
-ETtext = {
+let ETtext = {
   langto : "RU",
   h1:"VIIMASE MINUTI RINGID MAAILMAS",
   firstBlockp: "Osale lihtne uuring ja saad isikupärastatud valiku kuumadest ekskursioonidest",
