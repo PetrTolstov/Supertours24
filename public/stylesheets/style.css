@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 @media screen and (max-width: 442px){
   body .endOFwave{
 
@@ -11,6 +13,7 @@
 *{
   margin: 0;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -23,7 +26,6 @@
 
 body {
 
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: rgba(33, 175, 156, 0.42);
 }
 
@@ -191,7 +193,7 @@ main {
   margin-top: 5vh;
   padding-top: 20px;
   padding-bottom: 40px;
-  background: rgba(0, 0, 0, 0.49);
+
 }
 
 .blackbg p{
