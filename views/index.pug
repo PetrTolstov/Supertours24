@@ -20,32 +20,34 @@ block content
 
     script(type='text/javascript').
       (function () {
-        let listPosts = !{JSON.stringify(posts)}
+          let listPosts = !{JSON.stringify(posts)}
 
-        const parent = document.getElementById("vkpostS");
-        let code = ''
-        for (let post of listPosts) {
-          let id_num = post.attachments[0].photo.sizes.length - 1;
-          let photo = post.attachments[0].photo.sizes[id_num].url;
-          let num = post.text.indexOf('\n')
-          let h = post.text.slice(0, num)
-          let p = post.text.slice(num)
+          const parent = document.getElementById("vkpostS");
+          let code = ''
+          for (let post of listPosts) {
+              let id_num = post.attachments[0].photo.sizes.length - 1;
+              let photo = post.attachments[0].photo.sizes[id_num].url;
+              let index_between_text = post.text.indexOf('\n')
+              let in_for_link = post.text.indexOf('✅')
+              let h = post.text.slice(0, index_between_text)
+              let p = post.text.slice(index_between_text, in_for_link)
+              let l = post.text.slice(in_for_link+1)
 
-          code += `<div class="vkpost">
-                                <div class="post" style="background: url('${photo}') no-repeat;">
-                                    <div class="postText">
-                                        <div class="shadow"></div>
-                                        <h3>${h}</h3>
-                                        <p>${p}</p>
-                                        <div class="Button">#{text["more"]}</div>
-                                    </div>
-                                </div>
-                            </div>`
+              code += `<div class="vkpost">
+                                      <div class="post" style="background: url('${photo}') no-repeat;">
+                                          <div class="postText">
+                                              <div class="shadow"></div>
+                                              <h3>${h}</h3>
+                                              <p>${p}</p>
+                                              <a href="${l}"><div class="Button">#{text["more"]}</div></a>
+                                          </div>
+                                      </div>
+                                  </div>`
 
 
-        }
+          }
 
-        parent.innerHTML = code
+          parent.innerHTML = code
 
       })()
 

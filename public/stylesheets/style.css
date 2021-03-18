@@ -1,12 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+
 @media screen and (max-width: 442px){
   body .endOFwave{
 
-    top: -40vh;}
+    top: -120vh;}
 
   body .secondBlock{
     padding-bottom: 50px;
+  }
+
+  body .startWave{
+
+    top: -100vh;
+
+  }
+  body .secondBlock{
+    top: -100vh;
+
+  }
+
+  body .footerHead{
+    top: -140vh;
+    height: 30vh;
+
+  }
+
+  body .ob{
+
+    margin-top: -160vh;
+  }
+
+  body .footer{
+
+    margin-top: -100px;
+
   }
 }
 
@@ -17,9 +46,9 @@
 
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 
 
 
