@@ -3,7 +3,7 @@
 @media screen and (min-width: 1300px) and (max-width: 2000px){
   body .endOFwave{
 
-    top: -120vh;}
+    top: -140vh;}
 
   body .secondBlock{
     padding-bottom: 50px;
@@ -11,23 +11,23 @@
 
   body .startWave{
 
-    top: -100vh;
+    top: -120vh;
 
   }
   body .secondBlock{
-    top: -100vh;
+    top: -120vh;
 
   }
 
   body .footerHead{
-    top: -140vh;
+    top: -160vh;
     height: 30vh;
 
   }
 
   body .ob{
 
-    margin-top: -160vh;
+    margin-top: -180vh;
   }
 
   body .footer{
